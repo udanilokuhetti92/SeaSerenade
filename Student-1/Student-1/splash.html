@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title> Splash Screen </title>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"  type="text/css" href="template.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+		<meta http-equiv="refresh" content="4; url=home/Home.html">
+
+		<style>
+			body{
+				background-image:url("images/splash-back.jpeg");
+				background-size: cover;
+    			background-repeat: no-repeat; 
+				background-attachment: fixed;
+				background-position: center;
+			}
+
+			.mission_container{
+				height:fit-content;
+				width:1000px;
+				background-color:rgba(255,255,255,0.5);
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:10px;
+				padding:10px;
+				border-radius:25px;
+			}
+
+			.mission_container h3{
+				margin-top: 10px;
+				margin-bottom: 10px;
+				text-align:center;
+				font-size:20px;
+			}
+
+			.loader{
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:15px;
+				display: flex;
+				justify-content: center;
+    			align-items: center;
+			}
+
+			.loader img{
+				height:50px;
+				width:50px;
+			}
+
+			h1{
+				font-family: "Sofia", sans-serif;
+				font-size: 80px;
+				text-shadow: 3px 3px 8px #000;
+				text-align: center;
+				margin-top:45px;
+				color:white;
+			}
+
+			h2{
+				color:black;
+				text-align:center;
+				font-size:40px;
+			}
+
+			.member{
+				background-color: rgba(133, 193, 233,0.5);
+				border: 3px solid black;
+				border-radius: 10px;
+				margin-bottom: 10px;
+				padding: 5px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.members{
+				width: 40%;
+				max-width: 900px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 5px;
+			}
+
+			.member h3{
+				margin: 0;
+				padding: 10px;
+				flex: 1;
+				text-align: center;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1> SeaSeranade </h1>
+		<div class="mission_container">
+			<h2> Mission </h2>
+			<hr>
+			<h3> Our mission is to <br>conserve oceans and marine life, raise awareness, 
+				combat pollution, and ensure sustainable use of ocean resources for future generations. Through education and 
+				collaboration, we strive for a thriving marine environment. </h3>
+		</div>
+		<br>
+
+		<div class="members">
+			<div class="member">
+				<h3> Udani Lokuhetti</h3>
+				<h3> W2081921 </h3>
+			</div>
+			<div class="member">
+				<h3> Anika Mohamed </h3>
+				<h3> W2082837 </h3>
+			</div>
+			<div class="member">
+				<h3> Ruwanya Nanayakkara </h3>
+				<h3> W2081920 </h3>
+			</div>
+			<div class="member">
+				<h3> Thirani Yuhansi </h3>
+				<h3> W2083077 </h3>
+			</div>
+		</div>
+
+		<div class="loader">
+			<img src="images/loading-gif.gif" alt="loader">
+		</div>
+	</body>
+</html>

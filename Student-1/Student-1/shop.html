@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Shop </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet"  type="text/css" href="template.css">
+        <link rel="stylesheet"  type="text/css" href="shop.css">
+        <script src="shop.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <div class="logo-container">
+              <img src="images/logo.png" alt="Sea Seranade Logo">
+              <h2>Harmonizing Seas, Preserving Lives</h2>
+            </div>
+            <ul class="nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="shop.html" class="active">Shop</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="Feedback.html">Feedback</a></li>
+              <li><a href="sitemap1.html">Sitemap</a></li>
+              <li>
+                <button id="profile-button" class="profile-btn">Profile</button>
+              </li> 
+            </ul>
+        </nav>
+
+        <!-- category links -->
+        <div class="categories">
+            <a href="#new_arrivals"><img src="images/new_arrivals.jpg" alt="new_arrival"><h3> New Arrivals </h3></a>
+            <a href="#anklets"><img src="images/shop-items/Anklets/anklet-4.jpg" alt="anklets"><h3> Anklets </h3></a>
+            <a href="#bracelets"><img src="images/shop-items/Bracelets/bracelet-8.jpg" alt="bracelets"><h3> Bracelets </h3></a>
+            <a href="#necklace"><img src="images/shop-items/Necklace/gold-seashell-necklace.jpg" alt="necklace"><h3> Necklaces </h3></a>
+            <a href="#other"><img src="images/shop-items/Other/earrings.jpg" alt="other"><h3> Other </h3></a>
+            <br><br>
+        </div>
+
+        <!-- link to the cart -->
+        <div class="options">
+            <a href="show_cart.html" target="_self"><h4>Shopping Cart</h4></a>
+        </div>
+
+        <!-- New Arrival Products -->
+        <div id="new_arrivals">
+            <div class="transparent_back">
+                <h2> New Arrivals </h2>
+                <div class="items">
+                    <a href="#" onclick="viewProduct('Seashell Earrings', 5, 'images/shop-items/NewArrivals/seashell-earrings.jpg', 'O1000'); return false;">
+                        <div class="item">
+                            <img src="images/shop-items/NewArrivals/seashell-earrings.jpg" alt="item">
+                            <h4> Seashell Earrings </h4>
+                            <h4> Item Code : O1000</h4>
+                            <h4> Price: &dollar;5 </h4>
+                        </div>
+                    </a>
+
+                    <a href="item.html" onclick="viewProduct('Pearl Necklace', 10, 'images/shop-items/NewArrivals/necklace-10.jpg', 'O1001'); return false;">
+                        <div class="item">
+                            <img src="images/shop-items/NewArrivals/necklace-10.jpg" alt="item">
+                            <h4> Pearl Necklace </h4>
+                            <h4> Item Code : O1001</h4>
+                            <h4> Price: &dollar;10 </h4>
+                        </div>
+                    </a>
+
+                    <a href="#" onclick="viewProduct('Seashell Wall Hanger', 10, 'images/shop-items/NewArrivals/decor-2.jpg', 'O1002'); return false;">
+                        <div class="item">
+                            <img src="images/shop-items/NewArrivals/decor-2.jpg" alt="item">
+                            <h4> Seashell Wall Hanger </h4>
+                            <h4> Item Code : O1002</h4>
+                            <h4> Price: &dollar;10 </h4>
+                        </div>
+                    </a>
+
+                    <a href="#" onclick="viewProduct('Seashell Anklet', 4, 'images/shop-items/NewArrivals/bracelet-9.jpg', 'O1003'); return false;">
+                        <div class="item">
+                            <img src="images/shop-items/NewArrivals/bracelet-9.jpg" alt="item">
+                            <h4> Seashell Anklet </h4>
+                            <h4> Item Code : O1003</h4>
+                            <h4> Price: &dollar;4 </h4>
+                        </div>
+                    </a>
+
+                    <a href="#" onclick="viewProduct('Seashell & Stone Bracelet', 3, 'images/shop-items/NewArrivals/anklet-6.jpg', 'O1004'); return false;">
+                        <div class="item">
+                            <img src="images/shop-items/NewArrivals/anklet-6.jpg" alt="item">
+                            <h4> Seashell & Stone Bracelet </h4>
+                            <h4> Item Code : O1004</h4>
+                            <h4> Price: &dollar;3 </h4>
+                        </div>
+                    </a>
+
+                    <a href="#" onclick="viewProduct('Seashell Ring Set', 6, 'images/shop-items/NewArrivals/ring-1.jpg', 'O1005'); return false;">
+                        <div class="item">
+                            <img src="images/shop-items/NewArrivals/ring-1.jpg" alt="item">
+                            <h4> Seashell Ring Set </h4>
+                            <h4> Item Code : O1005</h4>
+                            <h4> Price: &dollar;6 </h4>
+                        </div>
+                    </a>
+
+                    <a href="#" onclick="viewProduct('Bottle Keytag', 9, 'images/shop-items/NewArrivals/4.jpg', 'O1006'); return false;">
+                        <div class="item">
+                            <img src="images/shop-items/NewArrivals/4.jpg" alt="item">
+                            <h4> Bottle Keytag </h4>
+                            <h4> Item Code : O1006</h4>
+                            <h4> Price: &dollar;9 </h4>
+                        
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Anklets items-->
+        <div id="anklets">
+            <div class="transparent_back">
+            <h2> Anklets </h2>
+            <div class="items">
+                <a href="#" onclick="viewProduct('Seashell Anklet', 7, 'images/shop-items/Anklets/anklet-1.jpg', 'O1007'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Anklets/anklet-1.jpg" alt="item">
+                        <h4> Seashell Anklet </h4>
+                        <h4> Item Code : O1007</h4>
+                        <h4> Price: &dollar;7 </h4>
+                    </div>
+                </a>
+                    <a href="#" onclick="viewProduct('Seashell and Pearl Anklet Set', 12, 'images/shop-items/Anklets/anklet-2.jpg', 'O1008'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Anklets/anklet-2.jpg" alt="item">
+                        <h4> Seashell and Pearl Anklet Set </h4>
+                        <h4> Item Code : O1008</h4>
+                        <h4> Price: &dollar;12 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Gold Plated Seashell Anklet', 15, 'images/shop-items/Anklets/anklet-3.jpg', 'O1009'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Anklets/anklet-3.jpg" alt="item">
+                        <h4> Gold Plated Seashell Anklet </h4>
+                        <h4> Item Code : O1009</h4>
+                        <h4> Price: &dollar;15 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Silver coloured Seashell Anklet', 10, 'images/shop-items/Anklets/anklet-4.jpg', 'O1010'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Anklets/anklet-4.jpg" alt="item">
+                        <h4> Silver coloured Seashell Anklet </h4>
+                        <h4> Item Code : O1010</h4>
+                        <h4> Price: &dollar;10 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Minimalistic Seashell and Pearl Anklet', 8, 'images/shop-items/Anklets/anklet-5.jpg', 'O1011'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Anklets/anklet-5.jpg" alt="item">
+                        <h4> Minimalistic Seashell and Pearl Anklet </h4>
+                        <h4> Item Code : O1011</h4>
+                        <h4> Price: &dollar;8 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Minimalistic Thread Anklet', 7, 'images/shop-items/Anklets/anklet-7.jpg', 'O1012'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Anklets/anklet-7.jpg" alt="item">
+                        <h4> Minimalistic Thread Anklet </h4>
+                        <h4> Item Code : O1012</h4>
+                        <h4> Price: &dollar;4 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Seashell and Pearl Anklet', 7, 'images/shop-items/Anklets/anklet-8.jpg', 'O1013'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Anklets/anklet-8.jpg" alt="item">
+                        <h4> Seashell and Pearl Anklet </h4>
+                        <h4> Item Code : O1013</h4>
+                        <h4> Price: &dollar;7 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Gold plated Seashells and Pearl Anklet', 10, 'images/shop-items/Anklets/anklet-9.jpg', 'O1014'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Anklets/anklet-9.jpg" alt="item">
+                        <h4> Gold plated Seashells and Pearl Anklet  </h4>
+                        <h4> Item Code : O1014</h4>
+                        <h4> Price: &dollar;10 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Seashell and Pearl Anklet', 7, 'images/shop-items/Anklets/anklet-10.jpg', 'O1015'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Anklets/anklet-10.jpg" alt="item">
+                        <h4> Seashell and Pearl Anklet </h4>
+                        <h4> Item Code : O1015</h4>
+                        <h4> Price: &dollar;7 </h4>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bracelet items -->
+        <div id="bracelets">
+            <div class="transparent_back">
+            <h2> Bracelets </h2>
+            <div class="items">
+                <a href="#" onclick="viewProduct('Seashell and Pearl Bracelet', 8, 'images/shop-items/Bracelets/bracelet-1.jpg', 'O1016'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Bracelets/bracelet-1.jpg" alt="item">
+                        <h4> Seashell and Pearl Bracelet </h4>
+                        <h4> Item Code : O1016</h4>
+                        <h4> Price: &dollar;8 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Minimalistic Thread Bracelet', 6, 'images/shop-items/Bracelets/bracelet-2.jpg', 'O1017'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Bracelets/bracelet-2.jpg" alt="item">
+                        <h4> Minimalistic Thread Bracelet </h4>
+                        <h4> Item Code : O1017</h4>
+                        <h4> Price: &dollar;6 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Thread Bracelets', 5, 'images/shop-items/Bracelets/bracelet-3.jpg', 'O1018'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Bracelets/bracelet-3.jpg" alt="item">
+                        <h4> Thread Bracelets </h4>
+                        <h4> Item Code : O1018</h4>
+                        <h4> Price: &dollar;5 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Seashell Bracelet', 9, 'images/shop-items/Bracelets/bracelet-4.jpg', 'O1019'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Bracelets/bracelet-4.jpg" alt="item">
+                        <h4> Seashell Bracelet </h4>
+                        <h4> Item Code : O1019</h4>
+                        <h4> Price: &dollar;9 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Silver Coated Seashell Bracelet', 13, 'images/shop-items/Bracelets/bracelet-5.jpg', 'O1020'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Bracelets/bracelet-5.jpg" alt="item">
+                        <h4> Silver Coated Seashell Bracelet </h4>
+                        <h4> Item Code : O1020</h4>
+                        <h4> Price: &dollar;13 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Minimalistic Thread Seashell Bracelet', 5, 'images/shop-items/Bracelets/bracelet-6.jpg', 'O1021'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Bracelets/bracelet-6.jpg" alt="item">
+                        <h4> Minimalistic Thread Seashell Bracelet </h4>
+                        <h4> Item Code : O1021</h4>
+                        <h4> Price: &dollar;5 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Seashell Minimal Bracelet', 5, 'images/shop-items/Bracelets/bracelet-7.jpg', 'O1022'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Bracelets/bracelet-7.jpg" alt="item">
+                        <h4> Seashell Minimal Bracelet </h4>
+                        <h4> Item Code : O1022</h4>
+                        <h4> Price: &dollar;5 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Thread and Seashell Bracelet Set', 11, 'images/shop-items/Bracelets/bracelet-set.jpg', 'O1023'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Bracelets/bracelet-set.jpg" alt="item">
+                        <h4> Thread and Seashell Bracelet Set  </h4>
+                        <h4> Item Code : O1023</h4>
+                        <h4> Price: &dollar;11 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Gold Plated Seashell Bracelet', 15, 'images/shop-items/Bracelets/bracelets-1.jpg', 'O1024'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Bracelets/bracelets-1.jpg" alt="item">
+                        <h4> Gold Plated Seashell Bracelet </h4>
+                        <h4> Item Code : O1024</h4>
+                        <h4> Price: &dollar;15 </h4>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Necklace items -->
+        <div id="necklace">
+            <div class="transparent_back">
+                <h2> Necklases </h2>
+            <div class="items">
+                <a href="#" onclick="viewProduct('Gold Seashell Necklace', 12, 'images/shop-items/Necklace/gold-seashell-necklace.jpg', 'O1025'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Necklace/gold-seashell-necklace.jpg" alt="item">
+                        <h4> Gold Seashell Necklace </h4>
+                        <h4> Item Code : O1025</h4>
+                        <h4> Price: &dollar;12 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Gold Plated Pearl Necklace', 10, 'images/shop-items/Necklace/necklace-3.jpg', 'O1026'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Necklace/necklace-3.jpg" alt="item">
+                        <h4> Gold Plated Pearl Necklace </h4>
+                        <h4> Item Code : O1026</h4>
+                        <h4> Price: &dollar;10 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Pearl Necklace', 9, 'images/shop-items/Necklace/necklace-4.jpg', 'O1027'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Necklace/necklace-4.jpg" alt="item">
+                        <h4> Pearl Necklace </h4>
+                        <h4> Item Code : O1027</h4>
+                        <h4> Price: &dollar;9 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Seashell Necklace', 8, 'images/shop-items/Necklace/necklace-5.jpg', 'O1028'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Necklace/necklace-5.jpg" alt="item">
+                        <h4> Seashell Necklace </h4>
+                        <h4> Item Code : O1028</h4>
+                        <h4> Price: &dollar;8 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Pearl Necklace', 11, 'images/shop-items/Necklace/necklace-6.jpg', 'O1029'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Necklace/necklace-6.jpg" alt="item">
+                        <h4> Pearl Necklace </h4>
+                        <h4> Item Code : O1029</h4>
+                        <h4> Price: &dollar;11 </h4>
+                    </div>
+                </a>
+                
+                <a href="#" onclick="viewProduct('Gold Plated Seashell Necklace Set', 20, 'images/shop-items/Necklace/necklace-7.jpg', 'O1030'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Necklace/necklace-7.jpg" alt="item">
+                        <h4> Gold Plated Seashell Necklace Set </h4>
+                        <h4> Item Code : O1030</h4>
+                        <h4> Price: &dollar;20 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Gold Seashell and Pearl Necklace', 15, 'images/shop-items/Necklace/necklace-8.jpg', 'O1031'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Necklace/necklace-8.jpg" alt="item">
+                        <h4> Gold Seashell and Pearl Necklace </h4>
+                        <h4> Item Code : O1031</h4>
+                        <h4> Price: &dollar;15 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Gold Chained Seashell Necklace', 18, 'images/shop-items/Necklace/necklace-9.jpg', 'O1032'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Necklace/necklace-9.jpg" alt="item">
+                        <h4> Gold Chained Seashell Necklace  </h4>
+                        <h4> Item Code : O1032</h4>
+                        <h4> Price: &dollar;18 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Gold and Silver Plated Seashell Necklace', 17, 'images/shop-items/Necklace/seashell-jewellary.jpg', 'O1033'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Necklace/seashell-jewellary.jpg" alt="item">
+                        <h4> Gold and Silver Plated Seashell Necklace </h4>
+                        <h4> Item Code : O1033</h4>
+                        <h4> Price: &dollar;17 </h4>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Other items -->
+        <div id="other">
+            <div class="transparent_back">
+            <h2> Other </h2>
+            <div class="items">
+                <a href="#" onclick="viewProduct('Gold Seashell Keytag', 9, 'images/shop-items/Other/1.jpg', 'O1034'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Other/1.jpg" alt="item">
+                        <h4> Gold Seashell Keytag </h4>
+                        <h4> Item Code : O1034</h4>
+                        <h4> Price: &dollar;9 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Seashell Keytags', 5, 'images/shop-items/Other/2.jpg', 'O1035'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Other/2.jpg" alt="item">
+                        <h4> Seashell Keytags </h4>
+                        <h4> Item Code : O1035</h4>
+                        <h4> Price: &dollar;5 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Pearl and Seashell Keytags', 6, 'images/shop-items/Other/3.jpg', 'O1036'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Other/3.jpg" alt="item">
+                        <h4> Pearl and Seashell Keytags </h4>
+                        <h4> Item Code : O1036</h4>
+                        <h4> Price: &dollar;6 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Bottle Shaped Keytag', 8, 'images/shop-items/Other/5.jpg', 'O1037'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Other/5.jpg" alt="item">
+                        <h4> Bottle Shaped Keytag </h4>
+                        <h4> Item Code : O1037</h4>
+                        <h4> Price: &dollar;8 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Seashell Keytag', 3, 'images/shop-items/Other/6.jpg', 'O1038'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Other/6.jpg" alt="item">
+                        <h4> Seashell Keytag </h4>
+                        <h4> Item Code : O1038</h4>
+                        <h4> Price: &dollar;3 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="viewProduct('Seashell Wind Chain', 18, 'images/shop-items/Other/decor-1.jpg', 'O1039'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Other/decor-1.jpg" alt="item">
+                        <h4> Seashell Wind Chain </h4>
+                        <h4> Item Code : O1039</h4>
+                        <h4> Price: &dollar;18 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="onclick=viewProduct('Seashell Mirror', 17, 'images/shop-items/Other/decor-3.jpg', 'O1040'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Other/decor-3.jpg" alt="item">
+                        <h4> Seashell Mirror </h4>
+                        <h4> Item Code : O1040</h4>
+                        <h4> Price: &dollar;17 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="onclick=viewProduct('Minimalistic Seashell Earrings', 9, 'images/shop-items/Other/gold-seashell-earrings.jpg', 'O1041'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Other/gold-seashell-earrings.jpg" alt="item">
+                        <h4> Minimalistic Seashell Earrings  </h4>
+                        <h4> Item Code : O1041</h4>
+                        <h4> Price: &dollar;9 </h4>
+                    </div>
+                </a>
+
+                <a href="#" onclick="onclick=viewProduct('Gold Seashell Earrings', 8, 'images/shop-items/Other/earrings.jpg', 'O1042'); return false;">
+                    <div class="item">
+                        <img src="images/shop-items/Other/earrings.jpg" alt="item">
+                        <h4> Gold Seashell Earrings </h4>
+                        <h4> Item Code : O1042</h4>
+                        <h4> Price: &dollar;8 </h4>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Link to back to top -->
+        <div class="up-arrow">
+            <a href="#"><img src="images/up_arrow.png" alt="top"></a>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer-content">
+            <div class="feedback">
+                <a href="feedback.html">
+                <img id="footer-image" src="images/feedback.png" alt="Feedback picture">
+                <h4>Give us your Feedback!</h4>
+                </a>
+                </div>
+            <div class="footer-links">
+                <h4>Navigate through</h4>
+                <a href="#">Home</a><br>
+                <a href="#">Gallery</a><br>
+                <a href="#">Shop</a><br>
+                <a href="#">Profile</a><br>
+                <a href="#">Team</a><br>
+                <a href="#">Sitemap</a>
+            </div>
+    
+            <div class="footer-links">
+                <h4>Go through our contents!</h4>
+                <a href="#">SDG 14 - Life Below Water</a><br>
+                <a href="content.html">Seaside Cleanup Campaigns</a><br>
+                <a href="#">Raising awareness of Marine Life</a><br>
+                <a href="#">Building a Seaside Community</a><br>
+            </div>
+    
+            <div class="footer-links">
+                This page is designed by <br>
+                Udani Lokuhetti (Student 1)<br>
+                <a href="page-editor.html" target="_blank">Link to page editor</a>
+            </div>
+            </div>
+            <div class="copyright">© 2024 SeaSerande | All rights reserved.</div>
+        </footer>
+
+    </body>
+</html>

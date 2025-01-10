@@ -1,0 +1,100 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1A5276; 
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    border: 1px solid #000080;
+}
+
+.container{
+    height:fit-content;
+    width:1000px;
+    background-color: rgba(0, 155, 214, 0.4);
+    border: 2px solid #00b8ff;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    border-radius:25px;
+    padding:10px;
+    margin-bottom: 50px;
+}
+
+.editor_info{
+    width:900px;
+    background-color:rgba(255,255,255,0.5);
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:25px;
+    border:3px solid #00b8ff;
+    padding:20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.content{
+    width:900px;
+    background-color:rgba(255,255,255,0.5);
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:25px;
+    border:3px solid #00b8ff;
+    padding:10px;
+}
+
+.container h1{
+    text-align:center;
+    font-family: 'Lora', serif;
+}
+
+th,td{
+    text-align:center;
+    font-family: 'Lora', serif;
+}
+
+table{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.content h4, .back h4{
+    background-color: #00719c; 
+    border: 2px solid #00b8ff; 
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    color: #ffffff;
+    width: 30%;
+    font-family: 'Lora', serif;
+}
+
+.content a, .back a{
+    text-decoration: none;
+    font-family: 'Lora', serif;
+}
+
+.content h4:hover, .back h4:hover{
+    background-color: #00b8ff;
+    color: #001f2b;
+}
+
+.content h3{
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+.content{
+    margin-bottom:20px;
+    padding:25px;
+}
+
+.content ul li{
+    font-family: 'Lora', serif;
+}

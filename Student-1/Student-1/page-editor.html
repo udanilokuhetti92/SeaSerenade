@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Page Editor | Udani Lokuhetti </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="template.css">
+        <link rel="stylesheet" type="text/css" href="page-editor.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="logo-container">
+              <img src="images/logo.png" alt="Sea Seranade Logo">
+              <h2>Harmonizing Seas, Preserving Lives</h2>
+            </div>
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="shop.html" class="active">Shop</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li>
+                <button id="profile-button" class="profile-btn">Profile</button>
+              </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h1> Page Editor </h1>
+            <div class="editor_info">
+                <table>
+                    <tr>
+                        <th> Name </th>
+                        <th> : </th>
+                        <td> Udani Lokuhetti </td>
+                    </tr>
+                    <tr>
+                        <th> Role </th>
+                        <th> : </th>
+                        <td> Student 1 </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"> The following pages were edited by me! </td> 
+                    </tr>
+                </table>
+            </div>
+            <br>
+
+            <div class="back">
+                <a href="#bottom"><h4>Jump to bottom</h4></a>
+            </div>
+
+            <div class="content">
+                <h3> Splash Screen </h3>
+                <ul>
+                    <li>Created a splash screen using html and css</li>
+                    <li>Added a loader gif and linked to the main page</li>
+                    <li>Added group member details including names and UOW id</li>
+                </ul>
+                <a href="splash.html"><h4>Link to the page</h4></a>
+
+                <hr>
+
+                <h3> Main Shop page </h3>
+                <ul>
+                    <li>Created main shop page using html and css</li>
+                    <li>Used javascript to create dynamic product pages for each product</li>
+                    <li>Added a link to the shopping cart</li>
+                </ul>
+                <a href="shop.html"><h4>Link to the page</h4></a>
+
+                <hr>
+
+                <h3> Product Page </h3>
+                <ul>
+                    <li>Used html and css to design the template of the page</li>
+                    <li>Used javascript to load the content to the product page including image, price, name, and item code</li>
+                </ul>
+                <a href="item.html"><h4>Link to the page</h4></a>
+
+                <hr>
+
+                <h3> Shopping cart </h3>
+                <ul>
+                    <li>Used html and css to design the template of the page</li>
+                    <li>Used local storage to store cart items</li>
+                    <li>Used DOM to update cart details dynamically when user added or deleted cart items</li>
+                    <li>Handled user interactions gracefully with javascript event handling to prevent that a user cannot checkout with an empty cart</li>
+                </ul>
+                <a href="show_cart.html"><h4>Link to the page</h4></a>
+
+                <hr>
+
+                <h3> Payment gate splash screen </h3>
+                <ul>
+                    <li>Created using html and css</li>
+                    <li>Redirecting the user to a secure payment gateway</li>
+                </ul>
+                <a href="payment_gate.html"><h4>Link to the page</h4></a>
+
+                <hr>
+
+                <h3> Checkout form </h3>
+                <ul>
+                    <li>Created checkout using html and css</li>
+                    <li>Used accordions to contain input fields for a better look</li>
+                    <li>Used javascript to display the accordion</li>
+                    <li>Used javascript validations to validate invalid user inputs and display infomative error messages</li>
+                </ul>
+                <a href="checkout.html"><h4>Link to the page</h4></a>
+            </div>
+            <div class="back" id="bottom">
+                <a href="#"><h4>Back to top</h4></a>
+            </div>
+        </div>
+
+        <!--Footer-->
+    <footer>
+        <div class="footer-content">
+          <div class="feedback">
+              <a href="#">
+              <img id="footer-image" src="images/feedback.png" alt="Feedback picture">
+              <h4>Give us your Feedback!</h4>
+              </a>
+            </div>
+          <div class="footer-links">
+            <h4>Navigate through</h4>
+            <a href="#">Home</a><br>
+            <a href="#">Gallery</a><br>
+            <a href="shop.html">Shop</a><br>
+            <a href="#">Profile</a><br>
+            <a href="#">Team</a><br>
+            <a href="#">Sitemap</a>
+          </div>
+  
+          <div class="footer-links">
+            <h4>Go through our contents!</h4>
+            <a href="#">SDG 14 - Life Below Water</a><br>
+            <a href="content.html">Seaside Cleanup Campaigns</a><br>
+            <a href="#">Raising awareness of Marine Life</a><br>
+            <a href="#">Building a Seaside Community</a><br>
+          </div>
+  
+          <div class="footer-links">
+            This page is designed by <br>
+            Udani Lokuhetti (Student 1)<br>
+            <a href="page-editor.html" target="_blank">Link to page editor</a>
+          </div>
+        </div>
+        <div class="copyright">© 2024 SeaSerande | All rights reserved.</div>
+      </footer>
+    </body>
+</html>

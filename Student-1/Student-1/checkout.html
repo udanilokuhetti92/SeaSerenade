@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="shop.css" type="text/css">
+    <link rel="stylesheet" href="checkout.css" type="text/css">
+    <link rel="stylesheet" href="template.css" type="text/css">
+    <script src="shop.js" defer></script>
+
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="logo-container">
+          <img src="images/logo.png" alt="Sea Seranade Logo">
+          <h2>Harmonizing Seas, Preserving Lives</h2>
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="Feedback.html">Feedback</a></li>
+          <li><a href="sitemap1.html">Sitemap</a></li>
+          <li>
+            <button id="profile-button" class="profile-btn">Profile</button>
+          </li>
+        </ul>
+    </nav>
+
+    <div class="checkout-banner">
+        <h2>Almost there...</h2>
+        <h3>Fill this details to complete your order</h3>
+    </div>
+
+    <!-- Checkout Form -->
+    <div class="forms">
+        <form name="checkout_form" onsubmit="return formValidation()" method="POST">
+            <div class="transparent_back">
+                <!-- Payment details -->
+                <div class="payment_details">
+                    <h2>Payment Details</h2>
+                    <h3>Payment Information:</h3>
+                    <button type="button" class="accordion-title">Edit Payment</button>
+                    <div class="content">
+                        <br><label for="card-number">Card Number <span>*</span></label><br>
+                        <input type="text" id="card-number" name="card-number"><br><br> 
+                        <label for="card-holder-name">Card Holder Name <span>*</span></label><br>
+                        <input type="text" id="card-holder-name" name="card-holder-name"><br><br> 
+                        <label for="expiry-date">Expiry Date <span>*</span></label><br> 
+                        <input type="text" id="expiry-date" name="expiry-date" placeholder=" MM/YY"><br><br>
+                        <label for="ccv">CCV <span>*</span></label><br>
+                        <input type="text" id="ccv" name="ccv">
+                    </div>
+                </div>
+
+                <!-- Billing Address Section -->
+                <div class="billing_details">
+                    <h2>Billing Address</h2>
+                    <h3>Address:</h3>
+                    <button type="button" class="accordion-title">Edit Address</button>
+                    <div class="content">
+                        <br><label for="address-1">Address Line 1 <span>*</span></label><br>
+                        <input type="text" id="address-1" name="address-1"><br><br> 
+                        <label for="address-2">Address Line 2</label><br>
+                        <input type="text" id="address-2" name="address-2"><br><br> 
+                        <label for="address-3">Address Line 3</label><br> 
+                        <input type="text" id="address-3" name="address-3"><br><br>
+                        <label for="city">Town / City <span>*</span></label><br>
+                        <input type="text" id="city" name="city"><br><br>
+                        <label for="state">State / Country </label><br>
+                        <input type="text" id="state" name="state"><br><br>
+                        <label for="zip-code">Post Code / Zip Code <span>*</span></label><br>
+                        <input type="text" id="zip-code" name="zip-code"><br><br>
+                        <label for="country">Country <span>*</span></label><br>
+                        <select id="country" name="country">
+                            <option value="" selected> Select from list</option>
+                            <option value="australia"> Australia </option>
+                            <option value="denmark"> Denmark </option>
+                            <option value="india"> India </option>
+                            <option value="russia"> Russia </option>
+                            <option value="srilanka"> Sri Lanka </option>
+                            <option value="uk"> United Kingdom </option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Contact Details Section -->
+                <div class="contact_details">
+                    <h2>Contact Details</h2>
+                    <h3>Contact Details:</h3>
+                    <button type="button" class="accordion-title">Edit Contact Details</button>
+                    <div class="content">
+                        <br><label for="f_name">First Name <span>*</span></label><br>
+                        <input type="text" id="f_name" name="f_name"><br><br>
+                        <label for="s_name">Surname <span>*</span></label><br>
+                        <input type="text" id="s_name" name="s_name"><br><br> 
+                        <label for="phone">Phone Number <span>*</span></label><br> 
+                        <input type="text" id="phone" name="phone"><br><br>
+                        <label for="email">Email Address <span>*</span></label><br>
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+
+                <!-- Submit and reset buttons -->
+                <div class="buttons">
+                    <input type="reset" value="Clear Fields">
+                    <input type="submit" value="Submit and pay">
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+          <div class="feedback">
+              <a href="feedback.html">
+              <img id="footer-image" src="images/feedback.png" alt="Feedback picture">
+              <h4>Give us your Feedback!</h4>
+              </a>
+            </div>
+          <div class="footer-links">
+            <h4>Navigate through</h4>
+            <a href="#">Home</a><br>
+            <a href="#">Gallery</a><br>
+            <a href="shop.html">Shop</a><br>
+            <a href="#">Profile</a><br>
+            <a href="#">Team</a><br>
+            <a href="#">Sitemap</a>
+          </div>
+  
+          <div class="footer-links">
+            <h4>Go through our contents!</h4>
+            <a href="#">SDG 14 - Life Below Water</a><br>
+            <a href="content.html">Seaside Cleanup Campaigns</a><br>
+            <a href="#">Raising awareness of Marine Life</a><br>
+            <a href="#">Building a Seaside Community</a><br>
+          </div>
+  
+          <div class="footer-links">
+            This page is designed by <br>
+            Udani Lokuhetti (Student 1)<br>
+            <a href="page-editor.html" target="_blank">Link to page editor</a>
+          </div>
+        </div>
+        <div class="copyright">© 2024 SeaSerande | All rights reserved.</div>
+      </footer>
+</body>
+</html>
