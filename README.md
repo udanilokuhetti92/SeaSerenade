@@ -1,2 +1,2 @@
 # SeaSerenade
-SeaSerenade is a group project with 4 members as a part of my coursework in Web Development module. And this is the Shop page that was developed by me.
+SeaSerenade is a group project with 4 members, created as part of the Web Development module coursework. This repository includes the Shop page, which was developed by me.
