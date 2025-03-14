@@ -1,0 +1,178 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.logo-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 150px; /* Adjust logo size as needed */
+    margin-right: 10px;
+}
+
+.logo-container h2 {
+    font-weight: bold;
+    color: #033e68;
+    text-align: center;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: darkblue; /* Change text color to dark blue */
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid rgba(5, 127, 210, 0.308); /* Bottom border for active link */
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid rgba(113, 175, 216, 0.308); 
+}
+
+.profile-btn {
+    background-color: transparent;
+    color: darkblue;
+    border: 2px solid rgb(0, 0, 139);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 15px; /* Makes the button curved */
+    font-weight: bold; /* Makes the font bold */
+}
+
+.profile-btn:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.profile-btn:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('homethumb.jpg');
+    background-position: bottom;
+    background-size: cover;
+    backdrop-filter: blur(20px);
+    opacity: 90%;
+    padding: 15px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 999;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-image {
+    flex: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#footer-image {
+    width: 200px;
+    text-shadow: #fff;
+    stroke: #fff;
+}
+
+.footer-links {
+    line-height: 150%;
+    flex: 1;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.footer-links ul {
+    list-style-type: none;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: hsl(240, 100%, 27%); 
+    width: 100%;
+    color: aliceblue;
+    padding: 10px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    margin: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    gap: 5vh; 
+    background-image: url('/home/homeBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.feedback a{
+    color:aliceblue;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title> Products </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="items.css">
+    <link rel="stylesheet" type="text/css" href="template.css">
+    <script src="shop.js" defer></script>
+</head>
+
+<body>
+  <!-- navigation bar -->
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Sea Seranade Logo">
+      <h2>Harmonizing Seas, Preserving Lives</h2>
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="Feedback.html">Feedback</a></li>
+      <li><a href="sitemap1.html">Sitemap</a></li>
+      <li>
+        <button id="profile-button" class="profile-btn">Profile</button>
+      </li> 
+    </ul>
+  </nav>
+
+    <br><br><br>
+    <!-- Load product item details dynamically when the user select a product to view -->
+    <table class="container">
+        <tr>
+            <th>
+                <div class="item_container">
+                    <img id="product-image" src="images/Transparent-background.jpg" alt="Product Image">
+                </div>
+            </th>
+            <th>
+                <div class="item_info_container">
+                    <span id="product-name"> </span><br>
+                    <div class="content">
+                        <p id="product-price"> Price :  </p><br>
+                        <p id="product-code"> Code :  </p><br>
+                        <p> Shipping Cost : <span> Free</span> </p><br>
+                        <p> Quantity : <input type="number" value="1" min="1" max="10" id="quantity"></p>
+                    </div>
+                    <div class="buttons">
+                        <a id="cart-list" href="#" data-add-to-cart><span class="back">Add to cart</span></a>
+                        <a href="Shop.html"><span class="back">Continue Shopping</span></a>
+                    </div>
+                </div>
+            </th>
+        </tr>
+    </table>
+    <br>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+          <div class="feedback">
+              <a href="feedback.html">
+              <img id="footer-image" src="images/feedback.png" alt="Feedback picture">
+              <h4>Give us your Feedback!</h4>
+              </a>
+            </div>
+          <div class="footer-links">
+            <h4>Navigate through</h4>
+            <a href="#">Home</a><br>
+            <a href="#">Gallery</a><br>
+            <a href="shop.html">Shop</a><br>
+            <a href="#">Profile</a><br>
+            <a href="#">Team</a><br>
+            <a href="#">Sitemap</a>
+          </div>
+  
+          <div class="footer-links">
+            <h4>Go through our contents!</h4>
+            <a href="#">SDG 14 - Life Below Water</a><br>
+            <a href="content.html">Seaside Cleanup Campaigns</a><br>
+            <a href="#">Raising awareness of Marine Life</a><br>
+            <a href="#">Building a Seaside Community</a><br>
+          </div>
+  
+          <div class="footer-links">
+            This page is designed by <br>
+            Udani Lokuhetti (Student 1)<br>
+            <a href="page-editor.html" target="_blank">Link to page editor</a>
+          </div>
+        </div>
+        <div class="copyright">© 2024 SeaSerande | All rights reserved.</div>
+      </footer>
+</body>
+</html>
